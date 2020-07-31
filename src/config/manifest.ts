@@ -26,7 +26,7 @@ export default (isEnvProduction: boolean): ExtensionManifest => ({
             `connect-src 'self' ${!isEnvProduction ? devConnectSource : ''}`,
             "script-src 'self'",
             "style-src * 'unsafe-inline'",
-            "img-src https://accounts.platform.sh/ 'self' data:",
+            "img-src 'self' data:",
         ].join('; ')
     }
 )
